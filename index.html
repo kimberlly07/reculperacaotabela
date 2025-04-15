@@ -1,39 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela Kimberlly e Maria</title>
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table border="1">
-        <tr>
-            <th>Marca</th>
-            <th>Modelo:</th>
-            <th>Ano:</th>
-            <th>Valor:</th>
-        </tr>
-        <tr>
-            <td>Volkswagen</td>
-            <td>Golf</td>
-            <td>2009</td>
-            <td>R$38.500</td>
-        </tr>
-        <tr>
-            <td>Fiat</td>
-            <td>Palio</td>
-            <td>2010</td>
-            <td>R$19.700</td>
-        </tr>
-        <tr>
-            <td>Honda</td>
-            <td>Civic</td>
-            <td>2012</td>
-            <td>R$61.500</td>
-        </tr>
-        <tr align="end">
-            <td colspan="4">O Melhor Preço da região</td>
-        </tr>
-    </table>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h1>Seja bem-vindo ao meu site!</h1>
+            <button id="botao-banner">Clique aqui!</button>
+        </section>
+        <section class="produtos">
+            <h2>Nossos Produtos</h2>
+            <ul>
+                <li>
+                    <img src="produto1.jpg" alt="Produto 1">
+                    <h3>Produto 1</h3>
+                    <p>Descrição do produto 1</p>
+                    <button class="botao-produto">Comprar</button>
+                </li>
+                <li>
+                    <img src="produto2.jpg" alt="Produto 2">
+                    <h3>Produto 2</h3>
+                    <p>Descrição do produto 2</p>
+                    <button class="botao-produto">Comprar</button>
+                </li>
+                <li>
+                    <img src="produto3.jpg" alt="Produto 3">
+                    <h3>Produto 3</h3>
+                    <p>Descrição do produto 3</p>
+                    <button class="botao-produto">Comprar</button>
+                </li>
+            </ul>
+        </section>
+        <section class="contato">
+            <h2>Entre em contato conosco!</h2>
+            <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea><br><br>
+                <button id="botao-enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Meu Site</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
